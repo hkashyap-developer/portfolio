@@ -5,8 +5,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import { ConfettiButton } from "@/components/magicui/confetti";
-
 export default function Home() {
   return (
     <div className="p-4 mx-[520px]">
@@ -27,14 +25,10 @@ export default function Home() {
         <AccordionItem value="item-3">
           <AccordionTrigger>Is it animated?</AccordionTrigger>
           <AccordionContent>
-            Yes. It's animated by default, but you can disable it if you prefer.
+            Yes. Its animated by default, but you can disable it if you prefer.
           </AccordionContent>
         </AccordionItem>
       </Accordion>
-
-      <div className="relative mt-20 flex justify-center">
-        <ConfettiButton>Confetti 🎉</ConfettiButton>
-      </div>
     </div>
   );
 }
